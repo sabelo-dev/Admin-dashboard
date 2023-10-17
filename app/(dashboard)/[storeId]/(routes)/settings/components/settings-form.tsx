@@ -28,7 +28,6 @@ const formSchema = z.object({
 
 type SettingsFormValues = z.infer<typeof formSchema>; 
 
-
 export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
     const params = useParams();
     const router = useRouter();
@@ -84,7 +83,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({ initialData }) => {
       </div>
       <Separator />
       <Form {...form}>
-        <form  onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-4">
+        <form  onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full">
             <div className="grid grid-cols-3 gap-8">
                 <FormField control={form.control} name="name" render={({ field }) => (
                     <FormItem>

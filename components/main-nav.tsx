@@ -18,13 +18,9 @@ export function MainNav({
       active: pathname === `/${params.userId}`,
     },
     {
-      href: `/${params.userId}/settings`,
+      href: `/${params.storeId}/settings`,
       label: "Settings",
-      active: pathname === `/${params.userId}/settings`,
-    },{
-      href: `/${params.userId}/categories`,
-      label: "Categories",
-      active: pathname === `/${params.userId}/categories`,
+      active: pathname === `/${params.storeId}/settings`,
     },
   ];
 

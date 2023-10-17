@@ -19,7 +19,7 @@ const store = await prismadb.store.findFirst({
     <div>
       Active store: {store?.name}
     </div>
-  )
+  );
 }
 
 export default Dashboard
