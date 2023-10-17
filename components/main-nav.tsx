@@ -22,7 +22,7 @@ export function MainNav({
       label: "Settings",
       active: pathname === `/${params.userId}/settings`,
     },{
-      href: `/${params.userId}/settings`,
+      href: `/${params.userId}/categories`,
       label: "Categories",
       active: pathname === `/${params.userId}/categories`,
     },
